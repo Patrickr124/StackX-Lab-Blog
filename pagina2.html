@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechZone</title>
+
+    <link rel="icon" href="Imagens/logo.png" type="image/x-icon">
+</head>
+
+<header class="cabecalhoBlog"><h1 class="titulo">TECHZONE</h1>
+    <nav class="menu">
+    <a class="link1" >Tela Inicial</a>
+      
+</nav>
+
+</header>
+
+
+<style>
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+    
+.cabecalhoBlog{
+background-color: rgba(44, 44, 84,1.0);
+padding-bottom: 20px;
+width: 100%;
+}
+
+.link1{
+    text-decoration: none;
+color: #fff;
+white-space: nowrap;
+cursor: pointer;
+width: 60px;
+}
+
+.link1:hover{
+    color: rgba(209, 204, 192,1.0);
+}
+
+.titulo{
+    position: relative;
+ color: #fff;
+position: relative;
+top: 15px;
+}
+
+
+
+.rodape{   
+    background-color: rgba(44, 44, 84,1.0);
+width: 100%;
+height: 50px;
+position:relative;
+top: 200px;
+bottom: 0;
+}
+
+
+.ano{
+color: #fff;
+font-size: 13px;
+text-align: center;
+padding-top: 20px;
+}
+
+
+
+.menu{
+    height: 17px;
+    width: 72.17px;
+    position: relative;
+    left: 400px;
+}
+
+
+.conteudoCard{
+    border:solid 1px black;
+width: 190px;
+height: 270px;
+box-shadow: 1px 1px 1px black;
+position: relative;
+left: 40%;
+margin-top: 6%;
+}
+
+
+#img{
+    width: 140px;
+height: 140px;
+border-radius: 70px;
+object-fit:cover;
+border: solid 2px black;
+margin-left: 12%;
+margin-top: 4px;
+}
+
+#textopro{
+    font-size: 8.4px;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+width:160px;
+text-align: justify;
+line-height: 12px;
+margin-left: 8%;
+position: relative;
+bottom: 2%;
+}
+
+.views2{
+    font-size: 10px;
+padding-left: 55%;
+position: relative;
+bottom: 1%;
+}
+
+.views{
+    font-size: 10px;
+position: relative;
+bottom:-6px;
+left: 100px;
+}
+
+.views3{
+    font-size: 10px;
+position: relative;
+left:100px;
+top:2% ;
+}
+
+.views4{
+    font-size: 10px;
+position: relative;
+left: 100px;
+top:2%;
+}
+
+.visu2{
+    width: 60px;
+font-size: 10px;
+position: relative;
+left: 88%;
+bottom: 40%;
+}
+
+.visu{
+    font-size: 10px;
+    width: 60px;
+    position: relative;
+    left: 85%;
+bottom: 109px;
+}
+
+.visu3{
+    font-size: 10px;
+    width: 60px;
+    position: relative;
+    bottom: 121px;
+    left:85%;
+}
+.visu4{
+    font-size: 10px;
+    width: 60px;
+    position: relative;
+    bottom:122px ;
+    left:85%;
+}
+.date2{
+    font-size: 10px;
+    font-family:Arial, Helvetica, sans-serif ;
+width: 50px;
+height: 10px;
+margin-left: 64%;
+position: relative;
+top: 6%;
+}
+
+.categoria{
+    font-size: 9.9px;
+color: rgba(183, 21, 64,1.0);;
+width:80px;
+padding-left: 8%;
+position: relative;
+top: 10%;
+}
+.categoria2{
+font-size: 9.9px;
+color: rgba(183, 21, 64,1.0);;
+width:80px;
+padding-left: 8%;
+position:relative;
+top: 10%;
+white-space: nowrap;
+}
+.categoria3{
+font-size: 9.9px;
+color: rgba(183, 21, 64,1.0);;
+width:80px;
+position: relative;
+white-space: nowrap;
+top:8%;
+padding-left: 8%;
+}
+.categoria4{
+font-size: 9.9px;
+color: rgba(183, 21, 64,1.0);;
+width:80px;
+position:relative;
+white-space: nowrap;
+top:8%;
+padding-left: 8%;
+}
+
+.caractere2{
+font-size: 10px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+width: 60px;
+position: relative;
+bottom: 97px;
+left: 10%;
+}
+
+.caractere{
+    font-size: 10px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+width: 60px;
+position: relative;
+bottom: 100px;
+left: 10%;
+}
+
+.caractere3{
+    font-size: 10px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+width: 60px;
+position: relative;
+bottom:111px ;
+left:18px ;
+}
+
+.caractere4{
+    font-size: 10px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+width: 60px;
+position: relative;
+bottom:111px;
+left:20px;
+}
+
+.img2{
+    width: 140px;
+height: 140px;
+border-radius: 70px;
+object-fit:cover;
+margin-left: 12%;
+position: relative;
+top: 1px;
+border: solid 2px black;
+
+}
+
+#img3{
+    width: 140px;
+height: 140px;
+border-radius: 70px;
+object-fit:cover;
+margin-left: 12%;
+margin-top: 4px;
+border: solid 2px black;
+position: relative;
+bottom:2px;
+}
+
+#img4{
+    width: 140px;
+height: 140px;
+border-radius: 70px;
+object-fit:cover;
+margin-left: 12%;
+margin-top: 4px;
+border: solid 2px black;
+position:relative;
+bottom:2px ;
+}
+
+.texto2{
+    font-size: 8.4px;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+width:160px;
+text-align: justify;
+line-height: 12px;
+margin-left: 8%;
+position: relative;
+top: 4%;
+}
+
+#texto3{
+    font-size: 8.4px;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+width:160px;
+text-align: justify;
+line-height: 12px;
+margin-left: 8%;
+position: relative;
+top: 2%;
+}
+
+#texto4{
+    font-size: 8.4px;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+width:160px;
+text-align: justify;
+line-height: 12px;
+margin-left: 8%;
+position: relative;
+top: 2%;
+}
+
+.imagem1{
+      width: 700px;
+
+
+}
+
+.imagem2{
+    width: 700px;   
+
+}
+
+.imagem3{
+    width: 700px;   
+
+}
+
+.imagem4{
+    width: 700px;
+  
+}
+
+.imagens{
+position: relative;
+left: 320px;
+width: 700px;
+}
+
+.dat{
+    font-size: 10px;
+    font-family:Arial, Helvetica, sans-serif ;
+position: relative;
+left: 120px;
+top: 3%;
+}
+
+.date3{
+    font-size: 10px;
+    font-family:Arial, Helvetica, sans-serif ;
+    position: relative;
+    left:118px ;
+    top: 1% ;
+}
+
+
+.date4{
+    font-size: 10px;
+    font-family:Arial, Helvetica, sans-serif ;
+    position: relative;
+    left:118px ;
+    top: 1%;
+}
+
+
+
+.textos{
+    position:relative;
+top: 170px;
+left: 330px;
+width: 600px;
+}
+
+
+.dataSvg{
+    position: relative;
+    left: 330px;
+    top: 590px;
+    width: 70px;
+}
+
+.caractereSvg{
+    position: relative;
+    top: 550px;
+    left: 330px;
+    width: 70px;
+}
+
+
+
+.visuali{
+    position: relative;
+    top: 530px;
+    left: 700px;
+    width: 70px;
+}
+
+.contaSvg{
+    position: relative;
+    top: 513px;
+    left: 795px;
+    width: 30px;
+}
+
+.visuSvg{
+    width: 40px;
+}
+
+#svgtexto1{
+    width: 600px;
+}
+
+#svgtexto2{
+    width: 600px;
+}
+
+#svgtexto3{
+    width: 600px;
+}
+
+#svgtexto4{
+    width: 600px;
+}
+</style>
+
+
+
+<body>
+    
+    
+  <div class="conteudoCard">
+  
+<img class="image" id="img" src="" alt="">
+<img class="img2" id="img2" src="" alt="">
+<img id="img3" src="" alt="">
+<img id="img4" src="" alt="">
+
+
+
+<p class="views2"></p>
+<p class="views"></p>
+<p class="views3"></p>
+<p class="views4"></p>
+
+<p class="texto2" id="texto2"></p>
+<p id="textopro"></p>
+<p id="texto3"></p>
+<p id="texto4"></p>
+
+<p class="categoria"></p>
+<p class="categoria2"></p>
+<p class="categoria3"></p>
+<p class="categoria4"></p>
+
+<p class="date2"></p>
+<p class="dat"></p>
+<p class="date3"></p>
+<p class="date4"></p>
+
+<p class="caractere2"></p>
+<p class="caractere"></p>
+<p class="caractere3"></p>
+<p class="caractere4"></p>
+
+<p class="visu"></p> 
+<p class="visu2"></p> 
+<p class="visu3"></p>
+<p class="visu4"></p>
+</div>
+
+    
+
+<div>
+
+    <div class="dataSvg">
+   <p class="date" id="data"></p>
+</div>
+   
+<div class="caractereSvg">
+<p class="caracter"></p>
+</div>
+   
+<div class="visuali">
+ <p class="viewsSvg"></p>
+ </div>
+ 
+ <div class="contaSvg">
+ <p class="visuSvg"></p>  
+</div> 
+
+<div class="imagens">
+    <img class="imagem1" src="" alt="">
+<img class="imagem2" src="" alt="">
+<img class="imagem3" src="" alt="">
+<img class="imagem4" src="" alt="">
+</div>
+
+
+<div class="textos">
+<p id="svgtexto1"></p>
+<p id="svgtexto2"></p>
+<p id="svgtexto3"></p>
+<p id="svgtexto4"></p>
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+<footer class="rodape">
+    <p class="ano">© TECHZONE 2023.</p>    
+  </footer>
+    
+      <script src="pagina2.js"></script>
+    </body>
+    
+    
+      </html>
