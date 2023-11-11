@@ -1,532 +1,638 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TechZone</title>
 
-    <link rel="icon" href="Imagens/logo.png" type="image/x-icon">
-</head>
+    <link rel="icon" href="Imagens/logo.png" type="image/x-icon" />
+  </head>
 
-<header class="cabecalhoBlog"><h1 class="titulo">TECHZONE</h1>
+  <header class="cabecalhoBlog">
+    <h1 class="titulo">TECHZONE</h1>
     <nav class="menu">
-    <a class="link1" >Tela Inicial</a>
-      
-</nav>
+      <a class="link1">Tela Inicial</a>
+    </nav>
+  </header>
 
-</header>
+  <!--css da página 2 -->
 
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
 
-<style>
-    *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-    
-.cabecalhoBlog{
-background-color: rgba(44, 44, 84,1.0);
-padding-bottom: 20px;
-width: 100%;
-}
+    .cabecalhoBlog {
+      background-color: rgba(44, 44, 84, 1);
+      padding-bottom: 20px;
+      width: 100%;
+    }
 
-.link1{
-    text-decoration: none;
-color: #fff;
-white-space: nowrap;
-cursor: pointer;
-width: 60px;
-}
+    .link1 {
+      text-decoration: none;
+      color: #fff;
+      white-space: nowrap;
+      cursor: pointer;
+      width: 60px;
+    }
 
-.link1:hover{
-    color: rgba(209, 204, 192,1.0);
-}
+    .link1:hover {
+      color: rgba(209, 204, 192, 1);
+    }
 
-.titulo{
-    position: relative;
- color: #fff;
-position: relative;
-top: 15px;
-}
+    .titulo {
+      position: relative;
+      color: #fff;
+      position: relative;
+      top: 15px;
+    }
 
+    .rodape {
+      background-color: rgba(44, 44, 84, 1);
+      width: 100%;
+      height: 50px;
+      top: 300px;
+      position: relative;
+    }
 
+    .ano {
+      color: #fff;
+      font-size: 13px;
+      text-align: center;
+      padding-top: 20px;
+    }
 
-.rodape{   
-    background-color: rgba(44, 44, 84,1.0);
-width: 100%;
-height: 50px;
-position:relative;
-top: 200px;
-bottom: 0;
-}
+    .menu {
+      height: 17px;
+      width: 72.17px;
+      position: relative;
+      left: 400px;
+    }
 
+    .conteudoCard {
+      border: solid 1px black;
+      width: 190px;
+      height: 270px;
+      box-shadow: 1px 1px 1px black;
+      position: relative;
+      left: 40%;
+      top: 20px;
+    }
 
-.ano{
-color: #fff;
-font-size: 13px;
-text-align: center;
-padding-top: 20px;
-}
+    #img {
+      width: 140px;
+      height: 140px;
+      border-radius: 70px;
+      object-fit: cover;
+      border: solid 2px black;
+      margin-left: 12%;
+      margin-top: 4px;
+    }
 
+    #textopro {
+      font-size: 8.4px;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      width: 160px;
+      text-align: justify;
+      line-height: 12px;
+      margin-left: 8%;
+      position: relative;
+      bottom: 2%;
+    }
 
+    .views2 {
+      font-size: 10px;
+      padding-left: 51%;
+      position: relative;
+      bottom: 2%;
+    }
 
-.menu{
-    height: 17px;
-    width: 72.17px;
-    position: relative;
-    left: 400px;
-}
+    .views {
+      font-size: 10px;
+      position: relative;
+      bottom: -3%;
+      left: 90px;
+    }
 
+    .views3 {
+      font-size: 10px;
+      position: relative;
+      left: 90px;
+      top: 1%;
+    }
 
-.conteudoCard{
-    border:solid 1px black;
-width: 190px;
-height: 270px;
-box-shadow: 1px 1px 1px black;
-position: relative;
-left: 40%;
-margin-top: 6%;
-}
+    .views4 {
+      font-size: 10px;
+      position: relative;
+      left: 90px;
+      top: 2px;
+    }
 
+    .visu2 {
+      width: 60px;
+      font-size: 10px;
+      position: relative;
+      left: 90%;
+      bottom: 43%;
+    }
 
-#img{
-    width: 140px;
-height: 140px;
-border-radius: 70px;
-object-fit:cover;
-border: solid 2px black;
-margin-left: 12%;
-margin-top: 4px;
-}
+    .visu {
+      font-size: 10px;
+      width: 60px;
+      position: relative;
+      left: 86%;
+      bottom: 113.6px;
+    }
 
-#textopro{
-    font-size: 8.4px;
-font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-width:160px;
-text-align: justify;
-line-height: 12px;
-margin-left: 8%;
-position: relative;
-bottom: 2%;
-}
+    .visu3 {
+      font-size: 10px;
+      width: 60px;
+      position: relative;
+      bottom: 130.5px;
+      left: 87%;
+    }
+    .visu4 {
+      font-size: 10px;
+      width: 60px;
+      position: relative;
+      bottom: 131px;
+      left: 87%;
+    }
+    .date2 {
+      font-size: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      width: 50px;
+      height: 10px;
+      margin-left: 64%;
+      position: relative;
+      top: 6%;
+    }
 
-.views2{
-    font-size: 10px;
-padding-left: 55%;
-position: relative;
-bottom: 1%;
-}
+    .categoria {
+      font-size: 9.9px;
+      color: rgba(183, 21, 64, 1);
+      width: 80px;
+      padding-left: 8%;
+      position: relative;
+      top: 10%;
+    }
+    .categoria2 {
+      font-size: 9.9px;
+      color: rgba(183, 21, 64, 1);
+      width: 80px;
+      padding-left: 8%;
+      position: relative;
+      top: 10%;
+      white-space: nowrap;
+    }
+    .categoria3 {
+      font-size: 9.9px;
+      color: rgba(183, 21, 64, 1);
+      width: 80px;
+      position: relative;
+      white-space: nowrap;
+      top: 6%;
+      padding-left: 8%;
+    }
+    .categoria4 {
+      font-size: 9.9px;
+      color: rgba(183, 21, 64, 1);
+      width: 80px;
+      position: relative;
+      white-space: nowrap;
+      top: 4%;
+      padding-left: 8%;
+    }
 
-.views{
-    font-size: 10px;
-position: relative;
-bottom:-6px;
-left: 100px;
-}
+    .caractere2 {
+      font-size: 10px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      width: 60px;
+      position: relative;
+      bottom: 100.7px;
+      left: 9%;
+    }
 
-.views3{
-    font-size: 10px;
-position: relative;
-left:100px;
-top:2% ;
-}
+    .caractere {
+      font-size: 10px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      width: 60px;
+      position: relative;
+      bottom: 100.7px;
+      left: 9%;
+    }
 
-.views4{
-    font-size: 10px;
-position: relative;
-left: 100px;
-top:2%;
-}
+    .caractere3 {
+      font-size: 10px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      width: 60px;
+      position: relative;
+      bottom: 117px;
+      left: 15px;
+    }
 
-.visu2{
-    width: 60px;
-font-size: 10px;
-position: relative;
-left: 88%;
-bottom: 40%;
-}
+    .caractere4 {
+      font-size: 10px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      width: 60px;
+      position: relative;
+      bottom: 118px;
+      left: 16px;
+    }
 
-.visu{
-    font-size: 10px;
-    width: 60px;
-    position: relative;
-    left: 85%;
-bottom: 109px;
-}
+    .img2 {
+      width: 140px;
+      height: 140px;
+      border-radius: 70px;
+      object-fit: cover;
+      margin-left: 12%;
+      position: relative;
+      top: 1px;
+      border: solid 2px black;
+    }
 
-.visu3{
-    font-size: 10px;
-    width: 60px;
-    position: relative;
-    bottom: 121px;
-    left:85%;
-}
-.visu4{
-    font-size: 10px;
-    width: 60px;
-    position: relative;
-    bottom:122px ;
-    left:85%;
-}
-.date2{
-    font-size: 10px;
-    font-family:Arial, Helvetica, sans-serif ;
-width: 50px;
-height: 10px;
-margin-left: 64%;
-position: relative;
-top: 6%;
-}
+    #img3 {
+      width: 140px;
+      height: 140px;
+      border-radius: 70px;
+      object-fit: cover;
+      margin-left: 12%;
+      margin-top: 4px;
+      border: solid 2px black;
+      position: relative;
+      bottom: 2px;
+    }
 
-.categoria{
-    font-size: 9.9px;
-color: rgba(183, 21, 64,1.0);;
-width:80px;
-padding-left: 8%;
-position: relative;
-top: 10%;
-}
-.categoria2{
-font-size: 9.9px;
-color: rgba(183, 21, 64,1.0);;
-width:80px;
-padding-left: 8%;
-position:relative;
-top: 10%;
-white-space: nowrap;
-}
-.categoria3{
-font-size: 9.9px;
-color: rgba(183, 21, 64,1.0);;
-width:80px;
-position: relative;
-white-space: nowrap;
-top:8%;
-padding-left: 8%;
-}
-.categoria4{
-font-size: 9.9px;
-color: rgba(183, 21, 64,1.0);;
-width:80px;
-position:relative;
-white-space: nowrap;
-top:8%;
-padding-left: 8%;
-}
+    #img4 {
+      width: 140px;
+      height: 140px;
+      border-radius: 70px;
+      object-fit: cover;
+      margin-left: 12%;
+      margin-top: 4px;
+      border: solid 2px black;
+      position: relative;
+      bottom: 2px;
+    }
 
-.caractere2{
-font-size: 10px;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-width: 60px;
-position: relative;
-bottom: 97px;
-left: 10%;
-}
+    .texto2 {
+      font-size: 8.4px;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      width: 160px;
+      text-align: justify;
+      line-height: 12px;
+      margin-left: 8%;
+      position: relative;
+      top: 4%;
+    }
 
-.caractere{
-    font-size: 10px;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-width: 60px;
-position: relative;
-bottom: 100px;
-left: 10%;
-}
+    #texto3 {
+      font-size: 8.4px;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      width: 160px;
+      text-align: justify;
+      line-height: 12px;
+      margin-left: 8%;
+      position: relative;
+      top: 2%;
+    }
 
-.caractere3{
-    font-size: 10px;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-width: 60px;
-position: relative;
-bottom:111px ;
-left:18px ;
-}
+    #texto4 {
+      font-size: 8.4px;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      width: 160px;
+      text-align: justify;
+      line-height: 12px;
+      margin-left: 8%;
+      position: relative;
+      top: 2%;
+    }
 
-.caractere4{
-    font-size: 10px;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-width: 60px;
-position: relative;
-bottom:111px;
-left:20px;
-}
-
-.img2{
-    width: 140px;
-height: 140px;
-border-radius: 70px;
-object-fit:cover;
-margin-left: 12%;
-position: relative;
-top: 1px;
-border: solid 2px black;
-
-}
-
-#img3{
-    width: 140px;
-height: 140px;
-border-radius: 70px;
-object-fit:cover;
-margin-left: 12%;
-margin-top: 4px;
-border: solid 2px black;
-position: relative;
-bottom:2px;
-}
-
-#img4{
-    width: 140px;
-height: 140px;
-border-radius: 70px;
-object-fit:cover;
-margin-left: 12%;
-margin-top: 4px;
-border: solid 2px black;
-position:relative;
-bottom:2px ;
-}
-
-.texto2{
-    font-size: 8.4px;
-font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-width:160px;
-text-align: justify;
-line-height: 12px;
-margin-left: 8%;
-position: relative;
-top: 4%;
-}
-
-#texto3{
-    font-size: 8.4px;
-font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-width:160px;
-text-align: justify;
-line-height: 12px;
-margin-left: 8%;
-position: relative;
-top: 2%;
-}
-
-#texto4{
-    font-size: 8.4px;
-font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-width:160px;
-text-align: justify;
-line-height: 12px;
-margin-left: 8%;
-position: relative;
-top: 2%;
-}
-
-.imagem1{
+    .imagem1 {
       width: 700px;
+    }
 
+    .imagem2 {
+      width: 700px;
+    }
 
-}
+    .imagem3 {
+      width: 700px;
+    }
 
-.imagem2{
-    width: 700px;   
+    .imagem4 {
+      width: 700px;
+    }
 
-}
+    .imagens {
+      position: relative;
+      left: 320px;
+      width: 700px;
+    }
 
-.imagem3{
-    width: 700px;   
+    .dat {
+      font-size: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      position: relative;
+      left: 126px;
+      top: 1.5%;
+    }
 
-}
+    .date3 {
+      font-size: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      position: relative;
+      left: 118px;
+      top: -2.3%;
+    }
 
-.imagem4{
-    width: 700px;
-  
-}
+    .date4 {
+      font-size: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      position: relative;
+      left: 130px;
+      top: -4.6%;
+    }
 
-.imagens{
-position: relative;
-left: 320px;
-width: 700px;
-}
+    .textos {
+      position: relative;
+      top: 170px;
+      left: 330px;
+      width: 600px;
+    }
 
-.dat{
-    font-size: 10px;
-    font-family:Arial, Helvetica, sans-serif ;
-position: relative;
-left: 120px;
-top: 3%;
-}
+    .dataSvg {
+      position: relative;
+      left: 330px;
+      top: 590px;
+      width: 70px;
+    }
 
-.date3{
-    font-size: 10px;
-    font-family:Arial, Helvetica, sans-serif ;
-    position: relative;
-    left:118px ;
-    top: 1% ;
-}
+    .caractereSvg {
+      position: relative;
+      top: 550px;
+      left: 330px;
+      width: 70px;
+    }
 
+    .visuali {
+      position: relative;
+      top: 530px;
+      left: 700px;
+      width: 70px;
+    }
 
-.date4{
-    font-size: 10px;
-    font-family:Arial, Helvetica, sans-serif ;
-    position: relative;
-    left:118px ;
-    top: 1%;
-}
+    .contaSvg {
+      position: relative;
+      top: 513px;
+      left: 820px;
+      width: 30px;
+    }
 
+    .visuSvg {
+      width: 40px;
+    }
 
+    #svgtexto1 {
+      width: 600px;
+    }
 
-.textos{
-    position:relative;
-top: 170px;
-left: 330px;
-width: 600px;
-}
+    #svgtexto2 {
+      width: 600px;
+    }
 
+    #svgtexto3 {
+      width: 600px;
+    }
 
-.dataSvg{
-    position: relative;
-    left: 330px;
-    top: 590px;
-    width: 70px;
-}
+    #svgtexto4 {
+      width: 600px;
+    }
 
-.caractereSvg{
-    position: relative;
-    top: 550px;
-    left: 330px;
-    width: 70px;
-}
+    /* Parte responsiva da Segunda Página*/
 
+    @media screen and (max-width: 768px) {
+      .imagem1,
+      .imagem2,
+      .imagem3,
+      .imagem4 {
+        width: 400px;
+      }
 
+      .imagens {
+        position: relative;
+        left: 30px;
+        bottom: 30px;
+        width: 400px;
+      }
 
-.visuali{
-    position: relative;
-    top: 530px;
-    left: 700px;
-    width: 70px;
-}
+      .textos {
+        position: relative;
+        left: 80px;
+        top: 100px;
+        font-size: 10px;
+        width: 300px;
+      }
 
-.contaSvg{
-    position: relative;
-    top: 513px;
-    left: 795px;
-    width: 30px;
-}
+      .contaSvg {
+        position: relative;
+        left: 380px;
+        top: 252px;
+        font-size: 10px;
+        width: 15px;
+      }
 
-.visuSvg{
-    width: 40px;
-}
+      .visuali {
+        position: relative;
+        top: 265px;
+        left: 300px;
+        font-size: 10px;
+      }
 
-#svgtexto1{
-    width: 600px;
-}
+      .dataSvg {
+        position: relative;
+        top: 310px;
+        left: 90px;
+        font-size: 10px;
+      }
 
-#svgtexto2{
-    width: 600px;
-}
+      .caractereSvg {
+        position: relative;
+        top: 280px;
+        left: 90px;
+        font-size: 10px;
+      }
 
-#svgtexto3{
-    width: 600px;
-}
+      .rodape {
+        position: relative;
+        top: 310px;
+      }
 
-#svgtexto4{
-    width: 600px;
-}
-</style>
+      .titulo {
+        font-size: 15px;
+        padding-left: 20px;
+      }
 
+      .link1 {
+        font-size: 12px;
+      }
 
+      #svgtexto1,
+      #svgtexto2,
+      #svgtexto3,
+      #svgtexto4 {
+        width: 300px;
+      }
 
-<body>
-    
-    
-  <div class="conteudoCard">
-  
-<img class="image" id="img" src="" alt="">
-<img class="img2" id="img2" src="" alt="">
-<img id="img3" src="" alt="">
-<img id="img4" src="" alt="">
+      .menu {
+        position: relative;
+        left: 200px;
+        top: 18px;
+      }
 
+      .dat,
+      .date2,
+      .date3,
+      .date4 {
+        width: 60px;
+      }
 
+      .views,
+      .views2,
+      .views3,
+      .views4 {
+        width: 100px;
+      }
+    }
 
-<p class="views2"></p>
-<p class="views"></p>
-<p class="views3"></p>
-<p class="views4"></p>
+    @media (min-width: 769px) and (max-width: 1200px) {
+      .imagem1,
+      .imagem2,
+      .imagem3,
+      .imagem4 {
+        width: 400px;
+      }
 
-<p class="texto2" id="texto2"></p>
-<p id="textopro"></p>
-<p id="texto3"></p>
-<p id="texto4"></p>
+      .imagens {
+        position: relative;
+        left: 130px;
+        bottom: 60px;
+        width: 400px;
+      }
 
-<p class="categoria"></p>
-<p class="categoria2"></p>
-<p class="categoria3"></p>
-<p class="categoria4"></p>
+      .textos {
+        position: relative;
+        left: 140px;
+        top: 280px;
+      }
 
-<p class="date2"></p>
-<p class="dat"></p>
-<p class="date3"></p>
-<p class="date4"></p>
+      .contaSvg {
+        position: relative;
+        left: 490px;
+        top: 212px;
+      }
 
-<p class="caractere2"></p>
-<p class="caractere"></p>
-<p class="caractere3"></p>
-<p class="caractere4"></p>
+      .visuali {
+        position: relative;
+        top: 230px;
+        left: 370px;
+      }
 
-<p class="visu"></p> 
-<p class="visu2"></p> 
-<p class="visu3"></p>
-<p class="visu4"></p>
-</div>
+      .dataSvg {
+        position: relative;
+        top: 300px;
+        left: 140px;
+      }
 
-    
+      .caractereSvg {
+        position: relative;
+        top: 250px;
+        left: 140px;
+      }
 
-<div>
+      .rodape {
+        position: relative;
+        top: 310px;
+      }
+    }
+  </style>
 
-    <div class="dataSvg">
-   <p class="date" id="data"></p>
-</div>
-   
-<div class="caractereSvg">
-<p class="caracter"></p>
-</div>
-   
-<div class="visuali">
- <p class="viewsSvg"></p>
- </div>
- 
- <div class="contaSvg">
- <p class="visuSvg"></p>  
-</div> 
+  <body>
+    <div class="conteudoCard">
+      <img class="image" id="img" src="" alt="" />
+      <img class="img2" id="img2" src="" alt="" />
+      <img id="img3" src="" alt="" />
+      <img id="img4" src="" alt="" />
 
-<div class="imagens">
-    <img class="imagem1" src="" alt="">
-<img class="imagem2" src="" alt="">
-<img class="imagem3" src="" alt="">
-<img class="imagem4" src="" alt="">
-</div>
+      <p class="views2"></p>
+      <p class="views"></p>
+      <p class="views3"></p>
+      <p class="views4"></p>
 
+      <p class="texto2" id="texto2"></p>
+      <p id="textopro"></p>
+      <p id="texto3"></p>
+      <p id="texto4"></p>
 
-<div class="textos">
-<p id="svgtexto1"></p>
-<p id="svgtexto2"></p>
-<p id="svgtexto3"></p>
-<p id="svgtexto4"></p>
-</div>
+      <p class="categoria"></p>
+      <p class="categoria2"></p>
+      <p class="categoria3"></p>
+      <p class="categoria4"></p>
 
+      <p class="date2"></p>
+      <p class="dat"></p>
+      <p class="date3"></p>
+      <p class="date4"></p>
 
+      <p class="caractere2"></p>
+      <p class="caractere"></p>
+      <p class="caractere3"></p>
+      <p class="caractere4"></p>
 
-</div>
+      <p class="visu"></p>
+      <p class="visu2"></p>
+      <p class="visu3"></p>
+      <p class="visu4"></p>
+    </div>
 
+    <div>
+      <div class="dataSvg">
+        <p class="date" id="data"></p>
+      </div>
 
+      <div class="caractereSvg">
+        <p class="caracter"></p>
+      </div>
 
+      <div class="visuali">
+        <p class="viewsSvg"></p>
+      </div>
 
+      <div class="contaSvg">
+        <p class="visuSvg"></p>
+      </div>
 
+      <div class="imagens">
+        <img class="imagem1" src="" alt="" />
+        <img class="imagem2" src="" alt="" />
+        <img class="imagem3" src="" alt="" />
+        <img class="imagem4" src="" alt="" />
+      </div>
 
-<footer class="rodape">
-    <p class="ano">© TECHZONE 2023.</p>    
-  </footer>
-    
-      <script src="pagina2.js"></script>
-    </body>
-    
-    
-      </html>
+      <div class="textos">
+        <p id="svgtexto1"></p>
+        <p id="svgtexto2"></p>
+        <p id="svgtexto3"></p>
+        <p id="svgtexto4"></p>
+      </div>
+    </div>
+
+    <footer class="rodape">
+      <p class="ano">© TECHZONE 2023.</p>
+    </footer>
+
+    <script src="pagina2.js"></script>
+  </body>
+</html>
